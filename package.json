@@ -1,0 +1,28 @@
+{
+  "name": "whatsapp-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@clinicaexperts/experts-icons": "^2.13.0",
+    "@clinicaexperts/experts-ui": "^0.0.1-vite.6",
+    "axios": "^1.7.5",
+    "dotenv": "^16.4.5",
+    "sass": "^1.77.8",
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "prettier": "3.3.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vue-tsc": "^2.0.29"
+  }
+}

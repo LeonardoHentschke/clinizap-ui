@@ -1,0 +1,28 @@
+@use 'sass:string';
+@use '@clinicaexperts/experts-ui/dist/styles/core' as *;
+
+/* Customize the theme */
+$eui-theme: eui-override(
+  (
+    font-family-sans-serif:
+      string.unquote('"Inter", Helvetica, Arial, sans-serif'),
+    modal-padding: 1.25rem,
+    modal-mobile-padding: 0.875rem,
+    input-phone-flags-image-path:
+      '@clinicaexperts/experts-ui/dist/assets/images/countries/',
+    avatar-large-picture-size: 5rem,
+    avatar-large-circle-picture-border-radius: 50%,
+    list-description-font-weight: 450,
+    default-font-weight: 450,
+    subtitle-font-weight: 450,
+    text-font-weight: 450,
+  )
+);
+
+@use '@clinicaexperts/experts-ui/dist/styles/global' as *;
+@use '@clinicaexperts/experts-ui/dist/styles/components' as *;
+
+body {
+  background-color: eui-theme(color-white);
+  min-height: 100vh;
+}
